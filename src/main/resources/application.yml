@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: config_server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/check321/config-repo.git
+          username: xxx
+          password: xxx
+  rabbitmq:
+    host: 122.152.216.232
+    port: 5672
+    username: xxx
+    password: xxx
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://node01:8701/eureka/
+server:
+  port: 8686
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:  "*"
+
+
+
